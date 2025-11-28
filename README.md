@@ -21,7 +21,7 @@ It is highly recommended to use a dedicated Python 3.12 virtual environment (ven
 1. Setup and Clone
 
 # 1. Install Python 3.12 venv package (If required on Ubuntu/Debian)
-sudo apt install python3.12-venv
+'''sudo apt install python3.12-venv'''
 
 # 2. Clone the repository
 git clone [https://github.com/samuelnaol72/f110-gym-py312.git](https://github.com/samuelnaol72/f110-gym-py312.git)
