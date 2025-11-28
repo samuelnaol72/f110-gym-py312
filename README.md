@@ -21,10 +21,6 @@ It is highly recommended to use a dedicated Python 3.12 virtual environment (ven
 # Clone the repository
 git clone https://github.com/samuelnaol72/f110-gym-py312.git
 cd f110-gym-py312
-
-# Create and activate environment
-python3.12 -m venv f110_py312_env
-source f110_py312_env/bin/activate
 ```
 
 ### 2. Install Dependencies and Library
@@ -35,7 +31,7 @@ This command installs all required packages (listed in requirements.txt) and set
 # Install dependencies (Numba, Gymnasium, Pyglet, etc.)
 pip install -r requirements.txt
 
-# Install the F1/10 library locally (includes map data)
+# Install the F1/10 library locally 
 pip install -e .
 ```
 
@@ -64,53 +60,6 @@ The ROS Bridge must map the keys from the observation dictionary (`obs`) back to
 For detailed troubleshooting, API descriptions, and advanced setup options, please refer to the comprehensive manual.
 
 ---
-
-# Constrained Optimization-Based Neuro-Adaptive Control (CONAC)
-
-- Paper Name: TBD
-- State: TBD
-- Template Version: Robot Branch
-
-> [!Note]
-> This paper will be submitted to [IEEE Transactions on Cybernetics](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6221036).
-
-You can find papers here:
-
-- First submission: 
-<!-- - Final submission: [still working](./manuscript.pdf) -->
-
-## About this Research
-
-The objective of this research is to design neuro-adaptive controller using constrained optimization theory. 
-The main features are as follows.
-
-- Stability of controller is ensured in the sense of Lyapunov.
-- Weights of neural network and tracking error are bounded over time.
-- Constraints are satisfied while adaptation (learning)
-    - Weight norm constraint.
-    - Control input saturation constraint (which is convex).
-
-## Authors
-
-- [Myeongseok Ryu](https://github.com/DDingR)
-- Donghwa Hong
-- Kyunghwan Choi
-
-# Gantt Chart
-
-```mermaid
-gantt
-    title CONAC
-    dateFormat  YYYY-MM-DD
-    axisFormat  CW%U
-    section Writing
-    Introduction: w1, 2025-04-14, 7d
-    Method: w2, after w1, 27d
-    section Validation
-    Measurement: v1,  2025-05-03, 28d
-    section Submission
-    Test and evaluation: t1,   2025-05-31, 5d
-```
 
 
 
